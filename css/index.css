@@ -185,6 +185,39 @@ body div.hero img {
   width: 60%;
   margin: 5% 0;
 }
+section.team {
+  border: 1px solid red;
+}
+section.team div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4% 0;
+}
+section.team div p {
+  width: 75%;
+}
+section.team div.bio {
+  display: flex;
+  flex-direction: column;
+}
+section.team div.bio h3 {
+  font-size: 2rem;
+}
+section.team div.even {
+  flex-direction: row-reverse;
+  padding-bottom: 5%;
+  justify-content: space-around;
+}
+section.team div.odd {
+  padding-bottom: 5%;
+  justify-content: space-around;
+}
+section.team img {
+  width: 25%;
+  max-width: 200px;
+  border-radius: 20px;
+}
 section.header {
   display: flex;
   align-items: center;
@@ -192,6 +225,7 @@ section.header {
   justify-content: space-between;
   border-bottom: 1px solid black;
   padding: 1%;
+  max-height: 9vh;
 }
 section.header a {
   width: 20%;
@@ -210,7 +244,8 @@ section.header nav {
 }
 section.header nav a {
   text-decoration: none;
-  color: black;
+  color: #222222;
+  font-size: 1.4rem;
   width: 5rem;
 }
 footer {
@@ -220,10 +255,10 @@ footer {
   align-content: center;
   align-items: center;
   padding: 2%;
-  position: absolute;
-  width: 90%;
+  width: 100%;
+  margin-top: 5%;
   max-width: 1200px;
-  bottom: 0;
+  max-height: 9vh;
 }
 footer p {
   color: #222222;
@@ -241,4 +276,5 @@ footer nav {
 footer nav a {
   text-decoration: none;
   color: #222222;
+  font-size: 1.5rem;
 }

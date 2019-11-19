@@ -45,7 +45,7 @@
     margin: 0 auto;
   }
 
-body{
+body{ 
   div.hero{
     display: flex;
     align-items: center;
@@ -63,5 +63,42 @@ body{
       width: 60%;
       margin: 5% 0;
     }
+  }
+}
+
+section.team{
+  border: 1px solid red;
+  div{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4% 0;
+    p{
+      width: 75%;
+    }
+  }
+  div.bio{
+    h3{
+      font-size: 2rem;
+    }
+    display: flex;
+    flex-direction: column;
+    
+  }
+  div.even{
+    flex-direction: row-reverse;
+    padding-bottom: 5%;
+    justify-content: space-around;
+  }
+  div.odd{
+    padding-bottom: 5%;
+    justify-content: space-around;
+  }
+  img{
+    width: 25%;
+    max-width: 200px;
+    border-radius: 20px;
+    
   }
 }
