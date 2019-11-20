@@ -6,8 +6,21 @@ section.header{
     border-bottom: 1px solid black;
     padding: 1%;
     max-height: 9vh;
-    a{
+    a.logo{
         width: 20%;
+        @media @mobile{
+            display: none;
+          }
+
+    }
+    a.mobile{
+        display: none;
+        @media @mobile{
+            display: flex;
+            max-height: 6vh;
+            max-width: 6vh;
+            width: auto;
+          }
     }
     h1 {
         
@@ -16,6 +29,10 @@ section.header{
         font-family: 'M PLUS Rounded 1c', sans-serif;
         font-weight: bold;
         text-transform: lowercase;
+        @media @mobile{
+            font-size: 4rem;
+            color: #222222;
+          }
     }
     nav{
         
