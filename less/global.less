@@ -45,13 +45,19 @@
     margin: 0 auto;
   }
 
-body{
+body{ 
   div.hero{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media @mobile{
+      flex-direction: column;
+    }
     div.text{
       width: 35%;
+      @media @mobile{
+        width: 90%;
+      }
       h2{
         font-family: 'M PLUS Rounded 1c', sans-serif;
         color: #222222;
@@ -62,6 +68,55 @@ body{
     img{
       width: 60%;
       margin: 5% 0;
+      @media @mobile{
+        width: 100%;
+      }
+    }
+  }
+}
+
+section.team{
+  //border: 1px solid red;
+  div{
+    @media @mobile{
+      width: 90%;
+      flex-direction: column-reverse;
+
+    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4% 0;
+    p{
+      width: 75%;
+    }
+  }
+  div.bio{
+    h3{
+      font-size: 2rem;
+    }
+    display: flex;
+    flex-direction: column;
+    
+  }
+  div.even{
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
+    flex-direction: row-reverse;
+    padding-bottom: 5%;
+    justify-content: space-around;
+  }
+  div.odd{
+    padding-bottom: 5%;
+    justify-content: space-around;
+  }
+  img{
+    width: 25%;
+    max-width: 200px;
+    border-radius: 20px;
+    @media @mobile{
+      width: 90%;
     }
   }
 }

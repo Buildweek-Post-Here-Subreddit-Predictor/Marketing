@@ -5,8 +5,22 @@ section.header{
     justify-content: space-between;
     border-bottom: 1px solid black;
     padding: 1%;
-    a{
+    max-height: 9vh;
+    a.logo{
         width: 20%;
+        @media @mobile{
+            display: none;
+          }
+
+    }
+    a.mobile{
+        display: none;
+        @media @mobile{
+            display: flex;
+            max-height: 6vh;
+            max-width: 6vh;
+            width: auto;
+          }
     }
     h1 {
         
@@ -15,6 +29,10 @@ section.header{
         font-family: 'M PLUS Rounded 1c', sans-serif;
         font-weight: bold;
         text-transform: lowercase;
+        @media @mobile{
+            font-size: 4rem;
+            color: #222222;
+          }
     }
     nav{
         
@@ -23,38 +41,10 @@ section.header{
         min-width: 100px;
         a{
             text-decoration: none;
-            color: black;
+            color: #222222;
+            font-size: 1.4rem;
             width: 5rem;
         }
     }
 }
 
-footer{
-    display: flex;
-    border-top: 1px solid black;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    padding: 2%;
-    position: absolute;
-    width: 90%;
-    max-width: 1200px;
-    bottom: 0;
-    p{
-        color: #222222;
-        text-align: center;
-        align-items: center;
-    }
-    nav{
-        align-content: center;
-        align-items: center;
-        width: 20%;
-        min-width: 100px;
-        display: flex;
-        justify-content: space-between;
-            a{
-            text-decoration: none;
-            color: #222222;
-            }
-    }
-}
