@@ -190,6 +190,7 @@ body div.hero div.text h2 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #222222;
   font-weight: bold;
+  margin: 2%;
 }
 body div.hero img {
   width: 60%;
@@ -199,6 +200,12 @@ body div.hero img {
   body div.hero img {
     width: 100%;
   }
+}
+body h2 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-size: 4rem;
 }
 section.team div {
   display: flex;
@@ -212,15 +219,19 @@ section.team div {
     flex-direction: column-reverse;
   }
 }
-section.team div p {
-  width: 75%;
-}
 section.team div.bio {
   display: flex;
   flex-direction: column;
+  width: 60%;
 }
 section.team div.bio h3 {
-  font-size: 2rem;
+  font-size: 3rem;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  section.team div.bio {
+    width: 100%;
+  }
 }
 section.team div.even {
   flex-direction: row-reverse;
@@ -251,7 +262,7 @@ section.header {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #222222;
   padding: 1%;
   max-height: 9vh;
 }
@@ -300,7 +311,7 @@ section.header nav a {
 }
 footer {
   display: flex;
-  border-top: 1px solid black;
+  border-top: 1px solid #222222;
   justify-content: space-between;
   align-content: center;
   align-items: center;
